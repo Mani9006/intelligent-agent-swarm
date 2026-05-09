@@ -314,3 +314,43 @@ project_26_agent_swarm/
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<!-- showcase:start -->
+
+## Architecture
+
+```mermaid
+flowchart LR
+    Goal[User Goal] --> Decomposer[Task Decomposer]
+    Decomposer --> Queue[(Priority Queue)]
+    Queue --> Selector[Agent Selector]
+    Selector --> Researcher
+    Selector --> Coder
+    Selector --> Reviewer
+    Selector --> Writer
+    Selector --> Planner
+    Researcher & Coder & Reviewer & Writer & Planner --> Bus[Message Bus]
+    Bus --> Consensus[Consensus Mechanism]
+    Consensus --> Result[Final Output]
+```
+
+## Test Results
+
+![Test results](docs/test_results.png)
+
+**94 passing**, **0 failing**, **0 skipped** (total 94, framework: pytest)
+
+## References & Further Reading
+
+- Wooldridge, M. (2009). *An Introduction to MultiAgent Systems* (2nd ed.). Wiley.
+- Stone, P. & Veloso, M. (2000). *Multiagent Systems: A Survey from a Machine Learning Perspective.* Autonomous Robots 8(3). [↗](https://link.springer.com/article/10.1023/A:1008942012299)
+
+## Author
+
+**Manikanta Reddy Mandadhi** — Senior Data Scientist (RAG / Agentic AI)
+
+GitHub: [@Mani9006](https://github.com/Mani9006/intelligent-agent-swarm) · LinkedIn: [reddy1999](https://www.linkedin.com/in/reddy1999) · Portfolio: [manikantabio.com](https://www.manikantabio.com)
+
+<!-- showcase:end -->
