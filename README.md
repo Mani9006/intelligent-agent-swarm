@@ -319,6 +319,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <!-- showcase:start -->
 
+## Research Report
+
+**Multi-Agent Task Delegation with Capability Routing and Coordination**
+
+_An evaluation of orchestrator-worker patterns under heterogeneous capability and partial-failure conditions_
+
+A self-contained research-grade report (Abstract, Introduction, Research Problem, Research Questions, Literature Review, Research Method, Data Description, Analysis, Discussion, Conclusion, Future Work, References) is published with this repository.
+
+[Read the full report (PDF)](docs/research_report.pdf)
+
+**Keywords:** multi-agent systems, task delegation, capability routing, fault tolerance
+
+![Research metrics](docs/research_metrics.png)
+
 ## Architecture
 
 ```mermaid
